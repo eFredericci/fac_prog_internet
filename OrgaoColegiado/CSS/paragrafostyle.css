@@ -1,0 +1,10 @@
+H1 {
+	color: blue;
+	background-color: yellow;
+	border: 1px solid black;
+}
+
+P {font-family: Times;
+font-size: 12pt;
+color: red;
+margin-left: 0.5in}
