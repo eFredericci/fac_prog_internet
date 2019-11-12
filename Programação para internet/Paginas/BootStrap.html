@@ -78,13 +78,31 @@
                             <a href="index.html"><i class="icon-chevron-right"></i>Home</a>
                         </li>
                         <li>
-                            <a href="#Como adicionar JavaScript no HTML"><span class="badge badge-success pull-right">1</span> Como adicionar JavaScript no HTML</a>
+                            <a href="#Bootstrap: Como Começar"><span class="badge badge-success pull-right">Inicio</span> Bootstrap: Como Começar</a>
                         </li>
                         <li>
-                            <a href="#Vantagens da linguagem JavaScript"><span class="badge badge-success pull-right">2</span> Vantagens da linguagem JavaScript</a>
+                            <a href="#Passo 1: Pegue o Framework"><span class="badge badge-success pull-right">1</span> Passo 1: Pegue o Framework</a>
+                        </li>
+						<li>
+                            <a href="#Passo 2: Entenda a Estrutura do Bootstrap"><span class="badge badge-success pull-right">2</span> Passo 2: Entenda a Estrutura do Bootstrap</a>
+                        </li>
+						<li>
+                            <a href="#Passo 3: Adicione o jQuery"><span class="badge badge-success pull-right">3</span> Passo 3: Adicione o jQuery</a>
+                        </li>
+						<li>
+                            <a href="#Passo 4: Crie o Template Inicial"><span class="badge badge-success pull-right">4</span> Passo 4: Crie o Template Inicial</a>
+                        </li>
+						<li>
+                            <a href="#Passo 5: Entenda as Meta Tags"><span class="badge badge-success pull-right">5</span> Passo 5: Entenda as Meta Tags</a>
+                        </li>
+						<li>
+                            <a href="#Passo 6: Entenda as Referências do Bootstrap"><span class="badge badge-success pull-right">6</span> Passo 6: Entenda as Referências do Bootstrap</a>
+                        </li>
+						<li>
+                            <a href="#Passo 7: Teste no Browser"><span class="badge badge-success pull-right">7</span> Passo 7: Teste no Browser</a>
                         </li>
                         <li>
-                            <a href="#Conclusão"><span class="badge badge-important pull-right">3</span> Conclusão</a>
+                            <a href="#Conclusão"><span class="badge badge-important pull-right">8</span> Conclusão</a>
                         </li>
                     </ul>
                 </div>
@@ -139,12 +157,12 @@
 									<div class="alert alert-success">
 										<button class="close" data-dismiss="alert">&times;</button>
 										<strong><H4>Dentro dessa pasta, que agora é o início do seu projeto, você deve ter uma estrutura de pastas como essa:</H4></strong><BR>
-										<strong><H4>Vão ter várias opções na tela, mas a que você deve usar, por enquanto, é primeira. Basta clicar e fazer o download.</strong></H4><BR>
-										<strong><H4>Ao final, você vai ter um ambiente com o Bootstrap funcionando, e pronto para começar a criar as suas páginas.</strong></H4><BR>
-										<p align="center"><img src="./../Imagens/Imagem/bootstrap-como-comecar-1024x640.PNG" width=100%/></p>
-										<strong><H4>Depois que terminar o download, você deve extrair os arquivos para uma pasta onde vai ficar o seu projeto. Se você já tiver um servidor local, pode colocar nele.</strong></H4>
-										<strong><H4>O pacote do Bootstrap nada mais é do que um arquivo .ZIP com vários códigos CSS e JavaScript, prontos para você usar no seu projeto.</strong></H4>
-										<strong><H4>E você pode renomear a pasta que foi extraída com o nome do seu projeto.</strong></H4>
+										<p align="center"><img src="./../Imagens/Imagem/bootstrap-mapa.PNG" width=100%/></p>
+										<strong><H4>Observe que há agora uma pasta “CSS”, uma pasta “Fonts” e uma pasta “JS” que vieram com o Bootstrap.</strong></H4><BR>
+										<strong><H4>Cada uma delas possui uma versão completa (os arquivos *.css e *.js), e uma versão “minificada” (os arquivos *.min.css e *.min.js) de cada script.</strong></H4><BR>
+										<strong><H4>Você deve usar a versão completa quando você quiser ler, ou ter acesso ao código-fonte do Bootstrap. E você deve usar a versão “minificada” (ou minified) quando for colocar seu projeto online, ou seja, em produção.</strong></H4>
+										<strong><H4>Por fim, a pasta “fonts” contém os vetores gráficos e a tipografia usada pelo Bootstrap para gerar ícones otimizados para o seu front-end.</strong></H4>
+										<strong><H4>Mais à frente, nos outros tutoriais, você poder ver como utilizá-los.</strong></H4>
 									</div>									
 								</div>
                             </div>
@@ -153,141 +171,151 @@
 						<!-- block -->
                         <div class="block">
                             <div class="navbar navbar-inner block-header">
-                                <div class="muted pull-left"><strong><H2><A NAME = "Vantagens da linguagem JavaScript">Vantagens da linguagem JavaScript</A></H2></strong></div>
+                                <div class="muted pull-left"><strong><H2><A NAME = "Passo 3: Adicione o jQuery">Passo 3: Adicione o jQuery</A></H2></strong></div>
                             </div>
                             <div class="block-content collapse in">
                                 <div class="span12">
 									<div class="alert alert-success">
 										<button class="close" data-dismiss="alert">&times;</button>
-										<strong><H4>A linguagem JavaScript era, antes de tudo, conhecida como LiveScript. Por conta do termo Java ser muito popular no mundo inteiro, a Netscape decidiu renomeá-la para JavaScript. A sua origem data de 1995, durante a fase 2.0 da Netscape. Abaixo estão algumas das vantagens de usar a linguagem JavaScript:</H4></strong> 
-									</div>
-									<strong><h3>Interação mínima com o servidor</h3></strong>
+										<strong><H4>Bom, ainda falta um item nesse setup.</H4></strong><BR>
+										<strong><H4>Para o Bootstrap funcionar corretamente, é preciso usar o jQuery. Senão nenhum componente, nem efeitos, irão funcionar. Você pode fazer o download do jQuery no site oficial: jquery.com/download</H4></strong><BR>
+										<p align="center"><img src="./../Imagens/Imagem/jquery-website.PNG" width=100%/></p>
+										<strong><H4>O download do jQuery é um pouco diferente. Você deve clicar com o botão direito no link do arquivo e escolher “Salvar como”, no menu. Depois que salvar, você deve colocar o jQuery na pasta “JS” do seu projeto.</strong></H4><BR>
+										<strong><H4>Eu recomendo, também, que você mude o nome do arquivo (para “jquery.js”), apenas para tirar a versão e deixar mais fácil de fazer o link, no HTML.</strong></H4><BR>
+									</div>									
+								</div>
+                            </div>
+                        </div>
+                        <!-- /block -->
+						<!-- block -->
+                        <div class="block">
+                            <div class="navbar navbar-inner block-header">
+                                <div class="muted pull-left"><strong><H2><A NAME = "Passo 4: Crie o Template Inicial">Passo 4: Crie o Template Inicial</A></H2></strong></div>
+                            </div>
+                            <div class="block-content collapse in">
+                                <div class="span12">
 									<div class="alert alert-success">
 										<button class="close" data-dismiss="alert">&times;</button>
-										<strong><H4>É um fato que se você quer otimizar o desempenho de um site, a melhor maneira de fazer isso é reduzindo a comunicação com o servidor. A JavaScript ajuda nesse sentido validando os comandos do usuário pelo cliente. Ele apenas envia pedidos para o servidor depois de rodar as verificações iniciais de validação. Como resultado, o uso de recursos e a quantidade de pedidos para o servidor diminuem significantemente.</H4></strong>
-									</div>
-									<strong><h3>Interface rica e amigável</h3></strong>
-									<div class="alert alert-success">
-										<button class="close" data-dismiss="alert">&times;</button>
-										<strong><H4>Usando a linguagem JavaScrpit, você pode criar interfaces interativas pela perspectiva do cliente. Por exemplo: carrosséis nos topos de páginas, slideshows, efeitos que são acionados quando o ponteiro do mouse passa por cima e funções que podem ser arrastadas e movidas de um lugar para outro.</H4></strong>
-									</div>
-									<strong><h3>Resposta imediata ao usuário</h3></strong>
-									<div class="alert alert-success">
-										<button class="close" data-dismiss="alert">&times;</button>
-										<strong><H4>Usando a linguagem JavaScript, você assegura respostas imediatas para os usuários. Por exemplo, vamos imaginar uma situação em que um usuário preencheu um formulário e deixou um campo vazio. Sem a validação JavaScript, ele precisa esperar até que a página seja recarregada para só então perceber que deixaram um campo vazio. Entretanto, com a JavaScript, ele é alertado sobre isso instantaneamente.</H4></strong>
-									</div>
-									<p align="center"><img src="./../Imagens/Imagem/fácil-depuração@4x-8.webp" width=100%/></p>
-									<strong><h3>Fácil depuração</h3></strong>
-									<div class="alert alert-success">
-										<button class="close" data-dismiss="alert">&times;</button>
-										<strong><H4>A JavaScript é uma linguagem de interpretação, o que significa que os códigos escritos são decifrados linha a linha. Em caso de surgimento de possíveis erros, você verá o número exato da linha em que o problema se encontra.</H4></strong>
-									</div>
-									<strong><h3>Como adicionar JavaScript no HTML</h3></strong>
-									<div class="alert alert-success">
-										<button class="close" data-dismiss="alert">&times;</button>
-										<strong><H4>Existem duas maneiras de adicionar JavaScript no HTML e fazê-las trabalhar juntas. Agora que já falamos sobre a linguagem JavaScript e vimos algumas das vantagens que ela oferece, vamos dar uma olhada em algumas das maneiras que podemos inserir JavaScript no HTML.</H4></strong>
-									</div>
-									<strong><h3>Como adicionar JavaScript diretamente em um arquivo HTML</h3></strong>
-									<div class="alert alert-success">
-										<button class="close" data-dismiss="alert">&times;</button>
-										<strong><H4>O primeiro jeito de adicionar JavaScript no HTML é mais direto. Você pode fazer isso usando a tag < script>< /script>, que deve abranger todo código JS que você escrever. O código JS pode ser adicionado:</H4></strong><li>Entre as tags < head></li><li>Entre as tags < body></li>
-										<p><strong><H4>Dependendo de onde você adicionar o código JavaScript no arquivo HTML, o carregamento é diferente. A prática recomendada é inseri-lo na seção < head>, pois ele ficará separado do conteúdo real do arquivo HTML.</strong></H4></p>
-										<p><strong><H4>Mas saiba que, colocá-lo na seção < body> poderá melhorar a velocidade de carregamento, já que o conteúdo do site atual será carregado mais rapidamente, e somente então o JavaScript será analisado. Para este exemplo, vamos dar uma olhada no arquivo HTML abaixo, usado para mostrar o horário atual.</strong></H4></p>
-									</div>
-									<div class="alert alert-success">
-										<button class="close" data-dismiss="alert">&times;</button>
-										<strong><H4><BR>< !DOCTYPE html>
-													<BR>< html lang="en-US">
-													<BR>< head>
-													<BR>< meta charset="UTF-8">
+										<strong><H4>Agora, na pasta do seu projeto, crie novo arquivo com o nome template-bootstrap.html e escreva a marcação básica de HTML5:</H4></strong><BR>
+										</div>
+									<div class="alert alert-block">
+										<strong><H4><BR>< !DOCTYPE html>	
+													<BR>< html lang="pt-br">	
+													<BR>< head>	  
+													<BR>< meta charset="utf-8">	  
+													<BR>< meta http-equiv="X-UA-Compatible" content="IE=edge">	  
 													<BR>< meta name="viewport" content="width=device-width, initial-scale=1">
-													<BR>< script>JAVASCRIPT IS USUALLY PLACED HERE< /script>
-													<BR>< title>Time right now is: < /title>
-													<BR>< /head>
-													<BR>< body>
-													<BR>< script>JAVASCRIPT CAN ALSO GO HERE< /script>
-													<BR>< /body>
+													<BR>< title>Template Bootstrap< /title>	  	  
+													<BR>< !-- Bootstrap CSS -->	  
+													<BR>< link href="css/bootstrap.min.css" rel="stylesheet">	  
+													<BR>< link href="css/style.css" rel="stylesheet">	
+													<BR>< /head>	
+													<BR>< body>	  
+													<BR>< h1>Hello, Bootstrap!< /h1>
+													<BR>< !-- jQuery (necessario para os plugins Javascript do Bootstrap) -->
+													<BR>< script src="js/jquery.js">< /script>	  
+													<BR>< script src="js/bootstrap.min.js">< /script>	
+													<BR>< /body>	
 													<BR>< /html></H4></strong>
 									</div>
 									<div class="alert alert-success">
-										<button class="close" data-dismiss="alert">&times;</button>
-										<p><strong><H4>Neste formato, o código acima não tem JavaScript e, consequentemente, não pode mostrar a hora atual. Podemos adicionar o código abaixo para ter certeza de que a página irá mostrar a hora esperada correta.</strong></H4></p>
-										<strong><H4><BR>var time = new Date();
-													<BR>console.log(time.getHours() + ":" + time.getMinutes() + ":" + time.getSeconds());</H4></strong>
+										<strong><H4>Observe na linha 1 o DOCTYPE:</H4></strong><BR>
+									</div>
+									<div class="alert alert-block">
+										<strong><H4>< !DOCTYPE html></H4></strong><BR>
 									</div>
 									<div class="alert alert-success">
-										<button class="close" data-dismiss="alert">&times;</button>
-										<p><strong><H4>Vamos colocar este código entre as tags < script> e < /script> e colocá-lo no topo do código  HTML para garantir que, quando a página carregar, um alerta é gerado e mostre a hora atual para o usuário. Abaixo você vê como o arquivo HTML deve ficar depois de inserir o código JavaScript nele:</strong></H4></p>
-										<strong><H4><BR>< !DOCTYPE html>
-													<BR>< html lang="en-US">
-													<BR>< head>
-													<BR>< meta charset="UTF-8">
-													<BR>< meta name="viewport" content="width=device-width, initial-scale=1">
-													<BR>< title>Time right now is: < /title>
-													<BR>< script>
-													<BR>v ar time = new Date();
-													<BR>c onsole.log(time.getHours() + ":" + time.getMinutes() + ":" + time.getSeconds());
-													<BR>< /script>
-													<BR>< /head>
-													<BR>< body>
-													<BR>< /body>
-													<BR>< /html>
-													</H4></strong>
-									</div>
+										<strong><H4>Este é o DOCTYPE de HTML5. O Bootstrap precisa ter a marcação toda em HTML5 para exibir a página corretamente.</strong></H4><BR>
+									</div>										
+								</div>
+                            </div>
+                        </div>
+                        <!-- /block -->
+						<!-- block -->
+                        <div class="block">
+                            <div class="navbar navbar-inner block-header">
+                                <div class="muted pull-left"><strong><H2><A NAME = "Passo 5: Entenda as Meta Tags">Passo 5: Entenda as Meta Tags</A></H2></strong></div>
+                            </div>
+                            <div class="block-content collapse in">
+                                <div class="span12">
 									<div class="alert alert-success">
 										<button class="close" data-dismiss="alert">&times;</button>
-										<p><strong><H4>Se você quiser mostrar a hora dentro do corpo da página, você precisa incluir o script dentro das tags <body> do HTML da página. Abaixo você confere como o código deve ficar quando você fizer isso:</strong></H4></p>
-										<strong><H4><BR>< !DOCTYPE html>
-													<BR>< html lang="en-US">
-													<BR>< head>
-													<BR>< meta charset="UTF-8">
-													<BR>< meta name="viewport" content="width=device-width, initial-scale=1">
-													<BR>< title>Time right now is: < /title>
-													<BR>< /head>
-													<BR>< body>
-													<BR>< script>
-													<BR>let d = new Date();
-													<BR>document.body.innerHTML = "< h1>Time right now is:  " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds()
-													<BR>"< /h1>"
-													<BR>< /script>
-													<BR>< /body>
-													<BR>< /html></H4></strong>
+										<strong><H4>Agora, vamos as metatags necessárias…</H4></strong><BR>
+									</div>
+									<div class="alert alert-block">
+										<strong><H4>< meta charset="utf-8"></H4></strong>
 									</div>
 									<div class="alert alert-success">
-										<button class="close" data-dismiss="alert">&times;</button>
-										<strong><H4>E abaixo está o resultado final do que você deve ver na página:</H4></strong><br>
-										<p align="center"><img src="./../Imagens/Imagem/adicionar-javascript-no-html-1.webp" width=100%/></p>
+										<strong><H4>Esta tag indica ao browser que a página vair usar caracteres Unicode, para exibir letras com acentos e cedilha, por exemplo.</H4></strong><BR>
 									</div>
-									<strong><h3>Como adicionar JavaScript em um arquivo separado</h3></strong>
+									<div class="alert alert-block">
+										<strong><H4>< meta http-equiv="X-UA-Compatible" content="IE=edge"></H4></strong><BR>
+									</div>
+									<div class="alert alert-success">
+										<strong><H4>Esta tag força o IE a usar as definições de CSS mais recentes, e evita que ele quebre o visual quando estiver no Modo de Compatibilidade.</strong></H4><BR>
+										<strong><H4>Ela é obrigatória. Uma vez eu esqueci de colocar, e quando as pessoas abriam pelo IE o site aparecia quebrado.</strong></H4><BR>
+										<strong><H4>Próximo…</strong></H4><BR>
+									</div>
+									<div class="alert alert-block">
+										<strong><H4>< meta name="viewport" content="width=device-width, initial-scale=1.0"></H4></strong><BR>
+									</div>
+									<div class="alert alert-success">
+										<strong><H4>A metatag de viewport faz o site ocupar todo o espaço disponível na janela, tanto em celulares, como em tablets ou em PC’s.</strong></H4><BR>
+										<strong><H4>Essa é a tag mais importante, e é ela que possibilita o design responsivo e o mobile-first.</strong></H4><BR>
+										<strong><H4>Todas essas “meta-tags” servem para qualquer site, e não apenas quando você usar o Bootstrap.</strong></H4><BR>
+									</div>
+								</div>
+                            </div>
+                        </div>
+                        <!-- /block -->
+						<!-- block -->
+                        <div class="block">
+                            <div class="navbar navbar-inner block-header">
+                                <div class="muted pull-left"><strong><H2><A NAME = "Passo 6: Entenda as Referências do Bootstrap">Passo 6: Entenda as Referências do Bootstrap</A></H2></strong></div>
+                            </div>
+                            <div class="block-content collapse in">
+                                <div class="span12">
 									<div class="alert alert-success">
 										<button class="close" data-dismiss="alert">&times;</button>
-										<strong><H4>Às vezes, inserir JavaScript no HTML de forma direta pode não parecer o melhor jeito de ligar uma linguagem à outra. Isso porque porque alguns scripts JS precisam ser usados em múltiplas páginas e, por isso, é melhor manter o código JavaScript em arquivos separados.</H4></strong><br>
-										<strong><H4>Por isso que um jeito mais aceitável de inserir JavaScript no HTML é pela importação externa de um arquivo. Esses arquivos podem ser referenciados de dentro de documentos HTML, assim como referenciamos documentos CSS.</H4></strong><br>
-										<strong><H4>Alguns dos benefícios de adicionar um código JS em arquivos separados são:</H4></strong><br>
-										<li>Quando o código HTML e o código JavaScript são separados, o princípio de design da separação de interesses é cumprido e torna tudo muito mais sustentável e reutilizável.</li>
-										<li>A leitura e a manutenção do código ficam muito mais fáceis de se fazer.</li>
-										<li>Arquivos JavaScript em cache melhoram o desempenho geral de um site ao diminuir o tempo que as páginas carregam.</li><br>
-										<strong><H4>Podemos referenciar um arquivo JavaScript dentro do HTML dessa forma abaixo:</H4></strong><br>
-										<strong><H4>
-													<br>< !DOCTYPE html>
-													<br>< html lang="en-US">
-													<br>< head>
-													<br>< meta charset="UTF-8">
-													<br>< meta name="viewport" content="width=device-width, initial-scale=1">
-													<br>< title>Time right now:< /title>
-													<br>< /head>
-													<br>< body>
-													<br>< /body>
-													<br>< script src="js/myscript.js">< /script>
-													<br>< /html>
-										</strong></H4><br>
-										<strong><H4>Os conteúdos do arquivo myscript.js serão:</H4></strong><br>
-													<br>et d = new Date();
-													<br>document.body.innerHTML = "< h1>Time right now is:  " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds()< /h1>"
+										<strong><H4>Agora sim, vamos para as referências aos arquivos Bootstrap.</H4></strong><BR>
+									</div>
+									<div class="alert alert-block">
+										<strong><H4>< link href="css/bootstrap.min.css" rel="stylesheet"></H4></strong>
+									</div>
+									<div class="alert alert-success">
+										<strong><H4>Este é a referência ao CSS do Bootstrap. Perceba que eu coloquei a versão minified (*.min.css). Esse link é obrigatório, claro.</H4></strong><BR>
+										<strong><H4>Na linha 15 eu coloquei um “Hello World Bootstrap”, apenas para testar no browser.</H4></strong><BR>
+									</div>
+									<div class="alert alert-block">
+										<strong><H4>< script src="js/jquery.js">< /script>
+												<br>< script src="js/bootstrap.min.js">< /script></H4></strong><BR>
+									</div>
+									<div class="alert alert-success">
+										<strong><H4>E essas são as referências ao jQuery e aos plug-ins do Bootstrap. O jQuery deve sempre vir antes do Js do Bootstrap, porque o Bootstrap depende dele.</strong></H4><BR>
+										<strong><H4>Observe que eu coloquei as bibliotecas Javascript por último – isso é uma boa prática para evitar lentidão no carregamento da página.</strong></H4><BR>
+									</div>
+								</div>
+                            </div>
+                        </div>
+                        <!-- /block -->
+						<!-- block -->
+                        <div class="block">
+                            <div class="navbar navbar-inner block-header">
+                                <div class="muted pull-left"><strong><H2><A NAME = "Passo 7: Teste no Browser">Passo 7: Teste no Browser</A></H2></strong></div>
+                            </div>
+                            <div class="block-content collapse in">
+                                <div class="span12">
+									<div class="alert alert-success">
+										<button class="close" data-dismiss="alert">&times;</button>
+										<strong><H4>Vamos ver como o navegador exibe essa página:</H4></strong><BR>
 									</div>
 									<div class="alert alert-info">
-										<button class="close" data-dismiss="alert">&times;</button>
-										<strong><H4>Aqui fica implícito que o arquivo myscript.js está presente no mesmo diretório que o arquivo HTML.</H4></strong><br>
+										<br><strong><H4>Hello, Bootstrap!</H4></strong><br><br><br><br><br><br>
+									</div>
+									<div class="alert alert-success">
+										<strong><H4>Como você pode ver, esse template é bem simples (até demais). Tem apenas algumas tags não-visuais e a estrutura básica.</H4></strong><BR>
+										<strong><H4>Esse tipo de página se chama boilerplate, ou template básico. E ela serve como modelo inicial para outras páginas. Assim, você não precisará ficar reescrevendo o HTML básico, e os links do head.</H4></strong><BR>
+										<strong><H4>Esta página já está otimizada para celulares e tablets, por causa da meta tag de viewport, e por causa dos estilos do Bootstrap que foram referenciados na página.</H4></strong><BR>
 									</div>
 								</div>
                             </div>
@@ -302,10 +330,9 @@
                                 <div class="span12">
 									<div class="alert alert-error">
 										<button class="close" data-dismiss="alert">&times;</button>
-										<strong><H4>Parabéns! Você aprendeu como inserir JavaScript no HTML com alguns exemplos básicos.</H4></strong><BR>
-										<strong><H4>Neste artigo, mostramos duas maneiras de adicionar JavaScript no HTML. E, uma vez que você se acostuma com as coisas, as possibilidades de fazer grandes coisas usando as duas linguagens de programação são ilimitadas.</H4></strong><BR>
-										<p align="center"><img src="./../Imagens/Imagem/como-adicionar-javascript-no-hmtl.webp" width=100%/></p>
-										<strong><H4>A JavaScript pode ser usada em combinação com o HTML para rodar aplicações modernas de internet que são intuitivas, interativas e amigáveis aos usuários. Por uma simples validação do cliente, ela reduz o tráfego do servidor e melhora a eficiẽncia geral de um site.</H4></strong><BR>
+										<strong><H4>Pronto. Agora você já tem um ambiente com o Bootstrap funcionando. Aqui você pôde ver nessa marcação básica os itens de HTML5, e as referências utilizadas em páginas com Bootstrap.</H4></strong><BR>
+										<strong><H4>É importante você entender para que serve cada um desses itens, para resolver problemas que possam surgir.</H4></strong><BR>
+										<strong><H4>Para criar outras páginas, basta copiar este template e começar a adicionar itens. Agora, podemos passar a trabalhar com os componentes de CSS do Bootstrap.</H4></strong><BR>
 									</div>
 								</div>
                             </div>
